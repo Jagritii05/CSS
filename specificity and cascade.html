@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascade</title>
+    <style>
+        /* specificity order:
+        Inline style> ID Selector > Class Selector > Element selector> Universal Selector. If we set an attribute as [important] then it will over write inline selector as well. */
+        /* The specificity of this selector is 1. */
+        h1 {
+            color: pink
+        }
+        /* The specificity of this selector is 1+10 (element+class)*/
+        h1.green{
+            color:green
+        }
+        /* The specifiicity of this selector is 10 */
+        .cred{
+            color:red
+        }
+        /* The specifiicity of this selector is 10 */
+        .cpurple{
+            color:purple
+        }
+        /* Attribute selector The specificity of this selector is 10*/
+        /* [data-x=a]{
+            background-color:red
+        } */
+         /* the specificity of this selector is 1+10+10+10+10=41
+         a.harryclass.rohanclass[href]:hover{
+            color:blueviolet
+         } */
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="green cred cpurple" data x="a">I am a paragraph.</h1>
+    </div>
+</body>
+
+</html>
