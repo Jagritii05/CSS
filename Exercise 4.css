@@ -1,0 +1,45 @@
+:root{
+    --background:rgb(244, 244, 249);
+    --nav:rgb( 51, 55, 69);
+    --hover:rgb(0, 168, 232);
+    --text: rgb(68, 76, 86);
+    --heading: rgb(51, 55, 69);
+    --defpad: 30px;
+    --navtext: white;
+}
+*{
+    background-color: var(--background);
+}
+
+.nav ul{
+    display: flex;
+    background-color: var(--nav);
+    margin: 0px;
+    padding: 0px;
+}
+.nav ul li{
+    background-color:var(--nav);
+    list-style: none;
+    padding: var(--defpad);
+    font-size: x-large;
+    color: var(--navtext);
+    text-decoration: underline;
+}
+.nav ul li:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+h1{
+    text-decoration-color: var(--heading);
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+.content {
+    text-decoration-color:var(--text) ;
+    text-align:center;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: large;
+}

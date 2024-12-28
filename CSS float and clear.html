@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img{
+            float:left;
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(2){
+            background-color: aqua;
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://th.bing.com/th/id/OIG3.LF0j5JICj4qbfqQ_Oudn" alt="" width="200px">
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis labore laborum, eaque, commodi ipsum, cum assumenda sit expedita itaque tempore aperiam error porro quasi aliquid. Laudantium sunt soluta perferendis voluptatum.
+            </p>
+        </div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
