@@ -9,6 +9,7 @@
         :root{
             --color: green;
             --seccolor: rgb(134, 177, 134);
+            --defpad: 23px;
         }
         .nav{
             background-color: var(--color);
@@ -21,8 +22,11 @@
           
         }
         ul li{
+            --color: rgb(143, 222, 143);
+            background-color: var(--color);
             list-style: none;
-            padding: 14px;
+            padding: var(--defpad);
+            border: 12px solid var(--seccolor);
         }
     </style>
 </head>
