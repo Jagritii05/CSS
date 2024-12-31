@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 100vw;
+            border: solid 3px purple;
+            
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border:solid 2px black;
+            transform:rotate(45deg);
+            /* transform: rotate(0.5turn);rotate by 0.5 of 360 deg */
+            /* transform: rotateX('angle'); rotates about the given axis */
+            /* transform:scale(1.5) increases the size of item by given factor */
+            /* transform:skew(30deg); */
+            transform: translate(90%);
+            /* (to move the item in a straight line by given percentage of length) */
+            /* transform-origin: 10%;(changes the axis of rotation) */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
